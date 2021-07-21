@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap");
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Rubik", sans-serif;
+}
+
+
+/* typography------------- */
+
+h1 {
+    font-size: 3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+h3 {
+    font-size: 1.125rem;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.large {
+    font-size: 3rem;
+    font-weight: 600;
+    padding: 0.1em;
+}
+
+.title {
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+
+body {
+    text-align: center;
+    background-color: #1ab1f6;
+    color: white;
+    padding: 2em;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.card {
+    background: linear-gradient(120deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6));
+    border-radius: 2em;
+    position: relative;
+    padding: 1rem;
+    margin-bottom: 2em;
+}
+
+.delete {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    height: 1.2rem;
+    aspect-ratio: 1/1;
+    background-color: rgb(255, 66, 66);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+img {
+    width: 100px;
+}
+
+input {
+    margin: 1.5em 0.5rem;
+    padding: 0.5em;
+    border: none;
+    border-radius: 0.75em;
+    max-width: 300px;
+    width: 50%;
+    font-size: 1rem;
+}
+
+input:focus,
+input:hover {
+    outline: none;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
+}
+
+button {
+    font-size: 1rem;
+    width: 2rem;
+    padding: 0.5rem;
+    border-radius: 0.75rem;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
+}
+
+button:active {
+    box-shadow: none;
+}
+
+@media screen and (min-width: 650px) {
+    .card-content {
+        display: flex;
+        align-items: center;
+    }
+    img {
+        width: 200px;
+        flex: 1;
+    }
+    .info {
+        flex: 1;
+    }
+    h2 {
+        font-size: 2.25rem;
+        font-weight: 400;
+        text-transform: capitalize;
+    }
+    h3 {
+        font-size: 1.5rem;
+        font-weight: 400;
+        text-transform: capitalize;
+    }
+    .large {
+        flex: 1;
+        font-size: 4rem;
+        font-weight: 600;
+    }
+    .title {
+        font-size: 2.25rem;
+        font-weight: 600;
+    }
+}
