@@ -11,7 +11,7 @@ addButton.addEventListener('click', function() {
             console.log(data)
             cards.innerHTML = `<div class="card">
                 <div class="card-content">
-                    <img src="http://openweathermap.org/img/w/${data.weather[0].icon}.png"/>
+                    <img src="https://openweathermap.org/img/w/${data.weather[0].icon}.png"/>
                     <div class="info">
                         <h1>${city}</h1>
                         <h2>${data.weather[0].description}</h2>
